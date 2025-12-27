@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join Me On</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NTPE8TKNV5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-NTPE8TKNV5');
-</script>
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTPE8TKNV5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NTPE8TKNV5');
+    </script>
 </head>
+
 <body>
     <!-- Background Picture -->
     <div id="image-bg"></div>
@@ -24,19 +26,43 @@
         <header>
             <h1>JOIN ME ON:</h1>
         </header>
+
         <main>
             <div class="buttons-container">
-                <a href="https://only-fan.github.io/Linda-galary/" class="social-button whatsapp">
+
+                <!-- WhatsApp Button -->
+                <a href="https://only-fan.github.io/Linda-galary/"
+                   class="social-button whatsapp"
+                   onclick="gtag('event','click',{
+                       event_category:'social_button',
+                       event_label:'WhatsApp'
+                   });">
                     WhatsApp
                 </a>
-                <a href="https://only-fan.github.io/Linda-galary/" class="social-button telegram">
+
+                <!-- Telegram Button -->
+                <a href="https://only-fan.github.io/Linda-galary/"
+                   class="social-button telegram"
+                   onclick="gtag('event','click',{
+                       event_category:'social_button',
+                       event_label:'Telegram'
+                   });">
                     Telegram
                 </a>
-                <a href="https://only-fan.github.io/Linda-galary/" class="social-button live-video">
+
+                <!-- Live Video Button -->
+                <a href="https://only-fan.github.io/Linda-galary/"
+                   class="social-button live-video"
+                   onclick="gtag('event','click',{
+                       event_category:'social_button',
+                       event_label:'Live Video'
+                   });">
                     Live Video
                 </a>
+
             </div>
         </main>
+
         <footer>
             <p>© 2025 Juicypleasure. All rights reserved.</p>
         </footer>
